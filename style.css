@@ -11,7 +11,7 @@ body{
 .container{
 display: flex;
 background-color:#2D25A0;
-;
+
 justify-content: center;
 align-items: center;
 width: 1440px;
@@ -43,6 +43,12 @@ height: 44px;
 color: white;
 background-color:  #E02C6D;
 padding: 10px 24px;
+
+
+
+}
+#button:hover{
+   background-color: cornflowerblue;
 }
 .banner{
     padding-left: 102px;
@@ -73,19 +79,31 @@ box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     height: 256px;
     
 }
+/* vedio Section  */
+.vedio{
+    display: flex;
+    border: 5px solid gray;
+    background-color:lightskyblue;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 
 /* Footer */
 footer {
     width: 483.87px;
     height: 213px;
-    border: 1px solid red;
+    
     margin: 158px 478.13px 63px 478px;
 }
 
 footer img {
     width: 455px;
     height: 110px;
+    */
 }
 
 
@@ -96,12 +114,79 @@ footer img {
     flex-direction: column;
 }
 
-.socials {
+.socials li {
     
     padding-right: 14px;
-    align-items: center;
+  
 
 }
-.copyright{
-    margin-top: 0px;
+.socials ul{
+    padding: 0px 156px;
 }
+.copyright{
+    margin-bottom: 0px;
+    padding-left: 123px;
+    padding-right: 123px;
+}
+
+
+/*----------------------------
+ --------Media queries---------
+ -----------------------------*/
+
+ /* mobile devices */
+
+
+  @media only screen and (max-width: 600px) {
+      .container{
+width: 100%;
+flex-direction: column;
+height: 50%;
+      }
+      .heading h1{
+          margin: 0px;
+          font-size: 200%;
+          justify-content: center;
+      }
+      .banner img{
+          width: 100%;
+         align-items: center;
+      }
+.banner{
+    padding: 50px;
+}
+.players{
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+
+ 
+    
+   
+}
+.vedio{
+    flex-direction: column;
+    width: 40px;
+    height: 80px;
+    align-items: center;
+
+    margin-bottom: 20px;
+    height: 60%;
+  
+}
+
+
+footer{
+margin:0px ;
+width: 100%;
+
+
+}
+footer img{
+    width:50%;
+    height: 50%;
+}
+.copyright{
+   font-size: 10px;
+}
+  }   
