@@ -7,46 +7,57 @@ body{
 }
 
 /* --------------Header style----------- */
-.header-section{
 
-}
-
-
-.header{
+.container{
 display: flex;
-background: #2D25A0;
-border: 5px solid red;
-width: 1440px;
-height: 677px;
+background-color:#2D25A0;
+;
 justify-content: center;
 align-items: center;
-
+width: 1440px;
+height: 677px;
 }
 .heading{
-     
-font-size: 24px;
-font-weight: bold;
+margin-bottom: 27px;
+}
+
+.heading h1{
+   
+    font-size: 63px;
+    line-height: 80px;
+    margin: 1px;   
+    font-weight: 700;
+    color: white;
+    
+}
+.head{
+   
+    width: 485;
+height: 301px;
+}
+
+#button{
+    text-decoration: none;
+    width: 168px;
+height: 44px;
 color: white;
-
+background-color:  #E02C6D;
+padding: 10px 24px;
+}
+.banner{
+    padding-left: 102px;
+    
 }
 
-.watch-button{
-
-}
-.banner {
-
-}
-.banner {
-
-}
 
 /* artical */
-article{
+main{
 margin: 70px 210px 165px 180px;
 }
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
     grid-row-gap: 27px;
 }
 .player-card{
@@ -55,7 +66,7 @@ padding: 15px;
 .player{
     width: 330px;
 height: 474px;
-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);;
+box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
 .player img{
     width: 300px;
@@ -65,35 +76,32 @@ box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);;
 
 
 /* Footer */
- footer{
- 
+footer {
     width: 483.87px;
-height: 213px;
-border: 2px solid violet; */
-margin: 158px 481.13px 63px 475px ;  
-}
-footer img{
-    width: 483.87px;
-height: 110px;
+    height: 213px;
+    border: 1px solid red;
+    margin: 158px 478.13px 63px 478px;
 }
 
-.footer-content{
+footer img {
+    width: 455px;
+    height: 110px;
+}
+
+
+.footer-content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.social{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.socials {
+    
     padding-right: 14px;
+    align-items: center;
+
 }
-.social li{
-    margin: 14px;
-   
-}
-.footer-bottom{
-    margin: 1px;
+.copyright{
+    margin-top: 0px;
 }
